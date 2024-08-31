@@ -39,26 +39,21 @@ def analyze_pitch(filename):
     pitch = snd.to_pitch()
 
     pitch_values = pitch.selected_array['frequency']
-    pitch_values = [p for p in pitch_values if p > 0]  # Remove unvoiced parts (zero frequency)
-
-    highest_pitch = max(pitch_values)
-    lowest_pitch = min(pitch_values)
+    pitch_values = [p for p in pitch_values if 300 > p > 60]  # Remove non-speech frequencies
     average_pitch = sum(pitch_values) / len(pitch_values) if pitch_values else 0
 
-    return highest_pitch, lowest_pitch, average_pitch
+    # Show rounded average pitch value
+    print(f"{round(average_pitch, 2)} Hz")
+
+    return average_pitch
 
 def is_female(persons_pitch):
-   # if persons_pitch < 155:
-   #      return False
-   #  #TO-DO inconclusive pitch
-   #  #elif persons_pitch < 165 and persons_pitch > 155:
-   #  elif persons_pitch >= 155:
-   #      return True
+    # Setting threshold
     return persons_pitch > 180
 
-def determine_gender(filename):
-    # Analyze pitch
-    highest_pitch, lowest_pitch, average_pitch = analyze_pitch(filename)
+def infer_gender(filename):
+    # Analyze average pitch
+    average_pitch = analyze_pitch(filename)
     # Determine gender
     if is_female(average_pitch):
         return True
@@ -70,14 +65,9 @@ def determine_gender(filename):
 if __name__ == "__main__":
     filename = "recorded_audio.wav"
     record_audio(filename, duration=5)
-    is_female = determine_gender(filename)
+    is_female = infer_gender(filename)
 
     if is_female:
         print("You are most probably a woman.")
     else:
         print("You are most probably a man.")
-
-
-    # print(f"Highest Pitch: {highest_pitch} Hz")
-    # print(f"Lowest Pitch: {lowest_pitch} Hz")
-    # print(f"Average Pitch: {average_pitch} Hz")
