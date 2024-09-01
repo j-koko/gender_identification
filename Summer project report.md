@@ -10,7 +10,7 @@ The AudiMNIST dataset consists of 30,000 audio recordings of cardinal numbers, r
 
 ## Experimenting with threshold values
 
-## Initially, the average pitch was calculated from a list of frequencies greater than zero. If the average pitch exceeded 155 Hz, the script classified the gender as female. The following table summarizes the results obtained for different thresholds:
+Initially, the average pitch was calculated from a list of frequencies greater than zero. If the average pitch exceeded 155 Hz, the script classified the gender as female. The following table summarizes the results obtained for different thresholds:
 
 | Threshold (average pitch in Hz) | Correct inferences | Accuracy (%) |
 | :---- | :---- | :---- |
