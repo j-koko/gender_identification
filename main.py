@@ -2,8 +2,8 @@ import parselmouth
 import pyaudio
 import wave
 
-# Function to record audio from microphone
 def record_audio(filename, duration=5, rate=44100, channels=1):
+    """Record audio from a microphone"""
     p = pyaudio.PyAudio()
 
     stream = p.open(format=pyaudio.paInt16,
@@ -33,41 +33,37 @@ def record_audio(filename, duration=5, rate=44100, channels=1):
     wf.close()
 
 
-# Function to analyze pitch using parselmouth
 def analyze_pitch(filename):
+    """Extract pitch values from an audio sample and calculate mean value"""
     snd = parselmouth.Sound(filename)
     pitch = snd.to_pitch()
-
     pitch_values = pitch.selected_array['frequency']
+
     pitch_values = [p for p in pitch_values if 300 > p > 60]  # Remove non-speech frequencies
-    average_pitch = sum(pitch_values) / len(pitch_values) if pitch_values else 0
-
-    # Show rounded average pitch value
-    print(f"{round(average_pitch, 2)} Hz")
-
+    average_pitch = sum(pitch_values) / len(pitch_values) if pitch_values else 0 # Safety mechanism for an empty list
     return average_pitch
 
 def is_female(persons_pitch):
-    # Setting threshold
+    """Threshold pitch value"""
     return persons_pitch > 180
 
 def infer_gender(filename):
-    # Analyze average pitch
+    """Infer gender based on pitch"""
     average_pitch = analyze_pitch(filename)
-    # Determine gender
     if is_female(average_pitch):
         return True
     else:
         return False
 
 
-# Main function
 if __name__ == "__main__":
     filename = "recorded_audio.wav"
     record_audio(filename, duration=5)
     is_female = infer_gender(filename)
+    pitch_info = round(analyze_pitch(filename), 2)
 
+    # Inform user about the result
     if is_female:
-        print("You are most probably a woman.")
+        print(f"You are probably a woman as your average pitch is {pitch_info} Hz.")
     else:
-        print("You are most probably a man.")
+        print(f"You are probably a man as your average pitch is {pitch_info} Hz.")

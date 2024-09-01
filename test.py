@@ -548,15 +548,9 @@ genders = []
 for key, data in test_data.items():
     is_female = infer_gender(f"data/{key}.wav")
     results.append(is_female == (data["gender"] == "female"))
-    # quick check for genders
-    genders.append(data["gender"])
 
 correct_guesses = [x for x in results if x == True]
-percentage = len(correct_guesses)/len(results) * 100
-print(results)
-print(percentage)
+accuracy_percent = len(correct_guesses)/len(results) * 100
+print(accuracy_percent)
 
-# quick check for the number of male voices in the dataset
-number_male = len([x for x in genders if x == "male"])
-# print(number_male)
 
