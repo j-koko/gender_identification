@@ -42,9 +42,6 @@ def analyze_pitch(filename):
     pitch_values = [p for p in pitch_values if 300 > p > 60]  # Remove non-speech frequencies
     average_pitch = sum(pitch_values) / len(pitch_values) if pitch_values else 0
 
-    # Show rounded average pitch value
-    print(f"{round(average_pitch, 2)} Hz")
-
     return average_pitch
 
 def is_female(persons_pitch):
@@ -66,8 +63,10 @@ if __name__ == "__main__":
     filename = "recorded_audio.wav"
     record_audio(filename, duration=5)
     is_female = infer_gender(filename)
+    pitch_info = round(analyze_pitch(filename), 2)
 
+    # Inform user about the result
     if is_female:
-        print("You are most probably a woman.")
+        print(f"You are probably a woman as your average pitch is {pitch_info} Hz.")
     else:
-        print("You are most probably a man.")
+        print(f"You are probably a man as your average pitch is {pitch_info} Hz.")
