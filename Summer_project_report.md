@@ -64,7 +64,7 @@ Additionally, the script is not suitable for children, as their fundamental freq
 
 ### 4.2 Ethical considerations
 
-The first ethical consideration is the need for inclusivity in such systems. A binary gender recognition system is inherently non-inclusive, as it may consistently misidentify non-binary individuals as either male or female, failing to represent their true gender identity. This misclassification can have practical consequences in real-life scenarios, such as denying someone access to gender-specific facilities like public restrooms. Beyond practical implications, these misrecognitions can also impose an emotional burden on the individuals affected, who may feel judged and categorized by an algorithm. Therefore, it is crucial to design such systems with sensitivity to these issues.
+The first ethical consideration is the need for inclusivity in such systems. A binary gender recognition system is inherently non-inclusive, as it may consistently misidentify non-binary individuals as either male or female, failing to represent their true gender identity. This misclassification can have practical consequences in real-life scenarios, such as denying someone access to gender-specific facilities like public restrooms (Hoefsloot, 2021). Beyond practical implications, these misrecognitions can also impose an emotional burden on the individuals affected, who may feel judged and categorized by an algorithm. Therefore, it is crucial to design such systems with sensitivity to these issues.
 
 Furthermore, it is essential to handle personal information in compliance with data privacy regulations. While gender itself may not be classified as sensitive personal data, it can be combined with other information to identify individuals, making techniques like pseudonymization valuable when managing such data. Gender recognition systems must adhere to both data privacy and anti-discrimination laws to ensure ethical operation.
 
@@ -89,6 +89,8 @@ My familiarity with Python libraries such as pyaudio, wave, and parselmouth, as 
 Becker, S., Vielhaben, J., Ackermann, M., Müller, K., Lapuschkin, S., & Samek, W. (2024). AudioMNIST: Exploring Explainable Artificial Intelligence for audio analysis on a simple benchmark. *Journal of the Franklin Institute, 361*(1), 418–428. 10.1016/j.jfranklin.2023.11.038
 
 Chaudhary, S., & Sharma, D. K. (Oct 2018). Gender Identification based on Voice Signal Characteristics. Paper presented at the *2018 International Conference on Advances in Computing, Communication Control and Networking (ICACCCN),* Greater Noida, India. 869–874. 10.1109/ICACCCN.2018.8748676 [https://ieeexplore.ieee.org/document/8748676](https://ieeexplore.ieee.org/document/8748676)
+
+Hoefsloot, M. E. (2021). an Inquiry Into the Ethics of Automatic Gender Recognition http://essay.utwente.nl/88595/
 
 Linders, B., Massa, G. G., Boersma, B., & Dejonckere, P. H. (1995). Fundamental voice frequency and jitter in girls and boys measured with electroglottography: influence of age and height. *International Journal of Pediatric Otorhinolaryngology, 33*(1), 61–65. 10.1016/0165-5876(95)01197-J
 
