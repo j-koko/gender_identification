@@ -28,7 +28,7 @@ One of the challenges I faced was cleaning the dataset. Specifically, I needed t
 
 ## 3\. Results
 
-## Initially, the average pitch was calculated from a list of frequencies greater than zero. If the average pitch exceeded 155 Hz, the script classified the gender as female. The following table summarizes the results obtained for different thresholds:
+Initially, the average pitch was calculated from a list of frequencies greater than zero. If the average pitch exceeded 155 Hz, the script classified the gender as female. The following table summarizes the results obtained for different thresholds:
 
 | Threshold (average pitch in Hz) | Correct inferences | Accuracy (%) |
 | :---- | :---- | :---- |
