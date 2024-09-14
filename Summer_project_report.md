@@ -1,6 +1,6 @@
 # Gender Prediction from Voice Pitch 
 
-1. ## Introduction
+## 1\. Introduction
 
 The goal of this project was to develop a Python script capable of predicting gender based on a speaker's fundamental frequency (pitch). The script is designed for binary gender classification, categorizing speakers as either male or female.
 
