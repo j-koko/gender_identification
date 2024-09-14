@@ -82,16 +82,16 @@ Alternatively, an approach that incorporates additional features such as Mel-fre
 
 This project has significantly deepened my understanding of voice technology, particularly the numerous factors involved in processing a seemingly simple audio file. While I do not yet fully grasp all the technical details of audio processing, I now have a far greater understanding than I did before. I also learned how much methodology can influence outcomes; for example, a small adjustment, like filtering out non-voice frequencies, led to more reliable results. Interestingly, this idea came to me not while working, but during my leisure time—something that often happens in programming.
 
-My familiarity with Python libraries such as pyaudio, wave, and parselmouth, as well as Python control flow, improved throughout the project. Most importantly, this experience has changed how I view myself. Previously, I saw myself primarily as a linguist and felt apprehensive about the technical aspects of my MSc in Voice Technology. However, successfully completing this project with a high accuracy rate has boosted my confidence and strengthened my determination to continue pursuing this degree and advancing in the voice technology field.
+My familiarity with Python libraries such as pyaudio, wave, and parselmouth, as well as Python control flow, improved throughout the project. Most importantly, this experience has changed how I view myself. Previously, I saw myself primarily as a linguist and felt apprehensive about the technical aspects of my MSc in Voice Technology. However, successfully completing this project with a high accuracy rate has boosted my confidence and strengthened my determination to continue pursuing this degree and advancing in the voice technology field[^1].
 
-### References (correct references)
+### References
 
 Becker, S., Vielhaben, J., Ackermann, M., Müller, K., Lapuschkin, S., & Samek, W. (2024). AudioMNIST: Exploring Explainable Artificial Intelligence for audio analysis on a simple benchmark. *Journal of the Franklin Institute, 361*(1), 418–428. 10.1016/j.jfranklin.2023.11.038
 
-Chaudhary, S., & Sharma, D. K. (Oct 2018). Gender Identification based on Voice Signal Characteristics. Paper presented at the 869–874. 10.1109/ICACCCN.2018.8748676 [https://ieeexplore.ieee.org/document/8748676](https://ieeexplore.ieee.org/document/8748676)
-
-Hoefsloot, M. E. (2021). *an Inquiry Into the Ethics of Automatic Gender Recognition Photo by Quino Al on Unsplash*
+Chaudhary, S., & Sharma, D. K. (Oct 2018). Gender Identification based on Voice Signal Characteristics. Paper presented at the *2018 International Conference on Advances in Computing, Communication Control and Networking (ICACCCN),* Greater Noida, India. 869–874. 10.1109/ICACCCN.2018.8748676 [https://ieeexplore.ieee.org/document/8748676](https://ieeexplore.ieee.org/document/8748676)
 
 Linders, B., Massa, G. G., Boersma, B., & Dejonckere, P. H. (1995). Fundamental voice frequency and jitter in girls and boys measured with electroglottography: influence of age and height. *International Journal of Pediatric Otorhinolaryngology, 33*(1), 61–65. 10.1016/0165-5876(95)01197-J
 
 Tielen, M. T. (1989). *Fundamental Frequency Characteristics of Middle Aged Men and Women* 
+
+[^1]:  I used LLMs to proofread the text and provide feedback on clarity and style. After critically evaluating the suggestions, I incorporated some of them into the final version of the report.
