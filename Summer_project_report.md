@@ -8,7 +8,7 @@ Initially, I understood that men generally have a lower fundamental frequency th
 
 Before starting my studies, I completed over 100 hours of MOOC programming courses. Using this foundation, I developed several personal projects, such as GUI games, a Pomodoro timer, and a brick calculator. Some of my projects were related to linguistics, including a basic phonetic transcription program for Polish, which, though incomplete, provided an interesting challenge.
 
-In my current role as a computational linguist, I use Python to automate tasks. Although I have limited experience in audio processing, my responsibilities in the TTS team involve frontend tasks like text normalization, grapheme-to-phoneme transcription, and evaluating acoustic models. However, I have not previously processed audio files programmatically, despite working with them in other capacities.
+In my current role as a computational linguist, I use Python to automate tasks. My responsibilities in the TTS team involve frontend tasks like text normalization, grapheme-to-phoneme transcription, and evaluating acoustic models.
 
 ## 2\. Methodology
 
